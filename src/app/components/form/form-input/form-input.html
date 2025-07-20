@@ -1,0 +1,9 @@
+<input
+  class="input input-bordered w-full"
+  [type]="type()"
+  [placeholder]="placeholder()"
+  [disabled]="disabledSignal()"
+  [value]="value()"
+  (input)="onInput($event)"
+  (blur)="onBlur()"
+/>
