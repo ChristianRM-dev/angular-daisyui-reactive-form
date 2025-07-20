@@ -1,59 +1,51 @@
-# AngularReactiveFormsDaisyui
+# 🌿 Modern Form Fields in Angular 20 (with Signals, Tailwind, and DaisyUI)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+This project demonstrates how to build reusable, validated form field components in Angular 20 using:
 
-## Development server
+- ✅ **Standalone Components**
+- ⚡ **Signals API**
+- 🎨 **Tailwind CSS + DaisyUI**
+- 🧩 **ControlValueAccessor**
+- 🧼 Fully typed `ReactiveForms`
 
-To start a local development server, run:
+> 📝 Inspired by the blog post:  
+> [Modern Form Fields in Angular 20 with Signals and Tailwind](https://your-blog-url.com/angular-form-fields)
 
-```bash
-ng serve
+---
+
+## 📦 What’s Included
+
+- `FormInput` – A reusable input component that integrates with Angular forms via `ControlValueAccessor`.
+- `FormField` – A wrapper component that renders a label, projected input, validation hints, and error messages.
+- A complete demo form using the `UserForm` interface with strongly-typed controls.
+- DaisyUI for clean, responsive input styling (dark mode ready 🎯).
+
+---
+
+## 🚀 Quick Preview
+
+```html
+<app-form-field
+  label="Email"
+  [control]="form.get('email')!"
+  [required]="true"
+  [customErrors]="{ email: 'Invalid email' }"
+>
+  <app-form-input
+    formControlName="email"
+    placeholder="Enter your email"
+    type="email"
+  />
+</app-form-field>
+
+## ✅ Features - Reusable with formControlName - Custom error messages via
+@Input() - Compatible with Tailwind / DaisyUI - Full dark mode support -
+Signals-based reactive error state - Ready for extension (FormSelect,
+FormTextarea, etc.) ## ✨ Want to Extend It? - Add input icons (iconLeft,
+iconRight) - Add FormSelect, FormTextarea, etc. - Add i18n error support
+(ngx-translate) - Add validation hint badges or animated error messages ## 📄
+License MIT — free to use, modify, or build on. ## 👨‍💻 Author Christian Rios
+[Portfolio](https://christianrios.dev/) •
+[GitHub](https://github.com/ChristianRM-dev) •
+[LinkedIn](https://www.linkedin.com/in/christian-rm-dev/)
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
