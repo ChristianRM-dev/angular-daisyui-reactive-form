@@ -37,15 +37,47 @@ This project demonstrates how to build reusable, validated form field components
     type="email"
   />
 </app-form-field>
-
-## ✅ Features - Reusable with formControlName - Custom error messages via
-@Input() - Compatible with Tailwind / DaisyUI - Full dark mode support -
-Signals-based reactive error state - Ready for extension (FormSelect,
-FormTextarea, etc.) ## ✨ Want to Extend It? - Add input icons (iconLeft,
-iconRight) - Add FormSelect, FormTextarea, etc. - Add i18n error support
-(ngx-translate) - Add validation hint badges or animated error messages ## 📄
-License MIT — free to use, modify, or build on. ## 👨‍💻 Author Christian Rios
-[Portfolio](https://christianrios.dev/) •
-[GitHub](https://github.com/ChristianRM-dev) •
-[LinkedIn](https://www.linkedin.com/in/christian-rm-dev/)
 ```
+
+
+## ✅ Features
+
+  
+
+- Reusable with formControlName
+
+- Custom error messages via @Input()
+
+- Compatible with Tailwind / DaisyUI
+
+- Full dark mode support
+
+- Signals-based reactive error state
+
+- Ready for extension (FormSelect, FormTextarea, etc.)
+
+  
+
+## ✨ Want to Extend It?
+
+- Add input icons (iconLeft, iconRight)
+
+- Add FormSelect, FormTextarea, etc.
+
+- Add i18n error support (ngx-translate)
+
+- Add validation hint badges or animated error messages
+
+  
+
+## 📄 License
+
+MIT — free to use, modify, or build on.
+
+  
+
+## 👨‍💻 Author
+
+Christian Rios
+
+[Portfolio](https://christianrios.dev/) • [GitHub](https://github.com/ChristianRM-dev) • [LinkedIn](https://www.linkedin.com/in/christian-rm-dev/)
